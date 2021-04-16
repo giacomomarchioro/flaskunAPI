@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unapi example</title>
+    <!-- This link is needed by unAPI it points to the API url -->
+    <link rel="unapi-server" type="application/xml" title="unAPI" href={{"/".join((request.url_root,"unapi"))}} />
+</head>
+<body>
+An unapi example for passing the following IDs:
+ <abbr class="unapi-id" title="urn:isbn:123456789X">ISBN 1-234-56789-X</abbr>
+ <abbr class="unapi-id" title="urn:isbn:123456789B">ISBN 1-234-56789-B</abbr>
+ <abbr class="unapi-id" title="urn:isbn:123456789C"></abbr>
+
+</body>
+</html>
